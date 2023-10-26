@@ -1,5 +1,5 @@
 {
-  "name": "express-app",
+  "name": "express-node-typescript-boilerplate",
   "version": "1.0.0",
   "description": "App wrote in node and express",
   "main": "src/server.ts",

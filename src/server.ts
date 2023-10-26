@@ -1,4 +1,4 @@
-import ExpressConfig from './Express/express.config'
+import ExpressConfig from './Express/express.config.js'
 
 import dotenv from 'dotenv'
 dotenv.config() // Load environment variables from .env file

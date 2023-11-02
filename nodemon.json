@@ -1,5 +1,5 @@
 {
     "watch": [ "src" ],
-    "ext": "ts",
-    "exec": "ts-node src/server.ts"
+    "ext": "ts, ejs",
+    "exec": "postcss public/styles/tailwind.css -o public/styles/style.css & ts-node src/server.ts"
   }

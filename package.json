@@ -1,5 +1,5 @@
 {
-  "name": "express-node-typescript-boilerplate",
+  "name": "express-culture-book",
   "version": "1.0.0",
   "description": "App wrote in node and express",
   "main": "src/server.ts",

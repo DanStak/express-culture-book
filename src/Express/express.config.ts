@@ -1,17 +1,20 @@
-import express, { type Application, Request, Response, NextFunction } from 'express';
+import express, { type Application } from 'express';
 import helmet from "helmet";
 import cookieParser from "cookie-parser"
 import path from 'path';
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
+import cors from 'cors';
 
 import mainRouter from '../routes/main';
+import { errorHandler } from '../middlewares/error-handler';
 
 const ExpressConfig = (): Application => {
   const app = express();
   
   app.use(helmet());
   app.use(cookieParser());
-  app.use(bodyParser.urlencoded({ extended: false }))
+  app.use(express.json());
+  app.use(cors());
 
   app.use(express.static(path.join(process.cwd(), 'public')));
 
@@ -22,11 +25,7 @@ const ExpressConfig = (): Application => {
 
   // ============= ERROR HANDLING ===================
 
-  app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
-    console.error(err.stack)
-    res.status(500).send('Something broke!')
-  });
-
+  app.use(errorHandler);
 
   return app
 }

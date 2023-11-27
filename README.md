@@ -1,4 +1,4 @@
-# 🚀 Project In Progress: SmartStuff Tracker 📦
+# 🚀 Project In Progress: Culture book 📦
 
 # Discover, Organize, and Share Books with my showcase application Culture Book!
 

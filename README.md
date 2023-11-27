@@ -1,3 +1,5 @@
+# 🚀 Project In Progress: SmartStuff Tracker 📦
+
 # Discover, Organize, and Share Books with my showcase application Culture Book!
 
 Introducing a thrilling showcase application that combines cutting-edge technologies to revolutionize your reading experience! Built with Node.js, Express, and powered by TypeScript, this app is your ultimate destination for discovering, organizing, and sharing your favorite books.
